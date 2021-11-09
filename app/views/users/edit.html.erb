@@ -1,4 +1,5 @@
 <div class="container">
+  <%= render 'users/errors', book: @user %>
   <div class="row">
     <div class="col-sm-12 col-md-8 col-lg-5 px-sm-0 mx-auto">
       <h1>User info</h1>
@@ -19,8 +20,6 @@
           <%= f.submit 'Update User', class: "btn btn-secondary"%>
         </div>
       <% end %>
-
-      <%= link_to "削除", user_registration_path, method: :delete%>
     </div>
   </div>
 </div>
