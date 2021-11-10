@@ -1,6 +1,8 @@
 <div class="container">
   <div class="row">
-    <%= render'users/userInfo', user: @book.user, book: @book %>
+    <div class="col-md-3">
+      <%= render'users/userInfo', user: @book.user, book: @newbook %>
+    </div>
     <div class="col-md-8 offset-md-1">
       <h2>Book detail</h2>
       <table class="table">
